@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="font-Poppins">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Required Core Stylesheet -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Layanan Kami</title>
+
+    <style media="screen">
+      nav .nav-links .link-services::after
+      {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .steps .step-primary+.step-primary:before, .steps .step-primary:after {
+        background-color: #2940D3;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Load content animation -->
+    <div class="load-wrapper">
+      <div class="load-circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="py-6 fixed inset-x-0">
+      <div class="container flex justify-between items-center">
+        <div class="logo-brand flex items-center">
+          <div class="">
+            <div class="logo p-2 bg-primary-white rounded-lg">
+              <img src="assets/logo.png" alt=""></a>
+            </div>
+            <div class="logo-shape"></div>
+          </div>
+          <img src="assets/logo-text.png" alt="" class="ml-6"></a>
+        </div>
+        <ul class="nav-links flex justify-between w-5/12 text-primary-white">
+          <li><a href="index.html" class="link-home">Beranda</a> </li>
+          <li><a href="layanan.html" class="link-services">Layanan</a> </li>
+          <li><a href="tentang.html" class="link-about">Tentang Kami</a> </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero min-h-screen-1/2" style="background-image: url(assets/bg-batik.svg);">
+      <div class="hero-overlay bg-opacity-70"></div>
+      <div class="text-center hero-content text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-6 text-5xl font-semibold">
+                Layanan Kami
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kustomisasi Flow -->
+    <section class="container pt-32 grid grid-cols-1 lg:grid-cols-2 gap-y-11 lg:gap-x-11">
+
+      <div class="text-content">
+        <h1 class="text-5xl mb-6">
+          <strong>Kustomisasi</strong>
+          <strong>A</strong>ugmented
+          <strong>R</strong>eality
+        </h1>
+        <p class="mb-6">
+          <span class="font-semibold">Variasikan</span> produk Anda sesuai dengan selera yang Anda inginkan
+        </p>
+        <a href="https://www.instagram.com/batiktech.st/">
+        <button class="batik-btn bg-primary-blue text-primary-white mr-6 mb-6">Pesan</button></a>
+        <a href="mailto:batiktechstyle@gmail.com?Subject=Mau%20Tanya">
+        <button class="batik-btn-outline text-primary-blue">Email</button></a>
+      </div>
+
+      <div class="preparation-flow justify-self-start md:justify-self-center">
+        <h2 class="mb-6 text-2xl font-medium">Persiapan</h2>
+        <ul class="steps steps-vertical min-h-full">
+          <li class="step step-primary">Meeting</li>
+          <li class="step step-primary">Content & Story Development</li>
+          <li class="step step-primary">App Development</li>
+          <li class="step step-primary">Deliver</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- F.A.Q. -->
+    <section class="max-w-xl mx-auto px-4 pt-32">
+
+      <h1 class="text-4xl font-medium text-center mb-9">F.A.Q.</h1>
+
+      <div class="collapse min-w-full mb-3 border rounded-box border-base-300 collapse-arrow">
+        <input type="checkbox">
+        <div class="collapse-title text-xl font-medium">
+          Cara tracking AR
+        </div>
+        <div class="collapse-content">
+          <p>
+            Gunakan filter ig yang sudah tersedia di instagram @batiktech.st. Arahkan kamera ke logo pin/batik yang anda order.
+          </p>
+        </div>
+      </div>
+      <div class="collapse min-w-full mb-3 border rounded-box border-base-300 collapse-arrow">
+        <input type="checkbox">
+        <div class="collapse-title text-xl font-medium">
+          Order
+        </div>
+        <div class="collapse-content">
+          <p>
+            Saat memesan batik/pin, diharapkan untuk menuliskan alamat lengkap agar memudahkan pengantaran barang.
+          </p>
+        </div>
+      </div>
+      <div class="collapse min-w-full mb-3 border rounded-box border-base-300 collapse-arrow">
+        <input type="checkbox">
+        <div class="collapse-title text-xl font-medium">
+          Metode pembayaran yang tersedia
+        </div>
+        <div class="collapse-content">
+          <p>
+            Untuk sementara metode pembayaran hanya cod. Metode pembayaran yang lain bisa ditanyakan melalui instagram/email batiktech.
+          </p>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-32 p-10 bg-secondary-dark">
+      <div class="container footer text-primary-white text-base">
+        <div>
+          <div class="logo p-2 bg-primary-white rounded-lg mb-4">
+            <img src="assets/logo.png" alt="">
+          </div>
+          <p>Batik Tech Style</p>
+          <p>Copyright &copy; 2021 - All right reserved</p>
+        </div>
+        <div>
+          <span class="uppercase font-medium mb-3.5">Social Media</span>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/batiktech.st/">
+              <i class="bx bxl-instagram-alt bx-md" style="margin-left: 7px;"></i>
+            </a>
+            <a href="https://m.facebook.com/profile.php?id=100073485008871">
+              <i class="bx bxl-facebook bx-md"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

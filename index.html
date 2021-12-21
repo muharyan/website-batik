@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="font-Poppins">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Required Core Stylesheet -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dist/css/glide.core.min.css">
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="dist/css/glide.theme.min.css">
+    <title>Home Page</title>
+  </head>
+  <style media="screen">
+    nav .nav-links .link-home::after
+    {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+  <body>
+
+    <!-- Load content animation -->
+    <div class="load-wrapper">
+      <div class="load-circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="py-6 fixed inset-x-0">
+      <div class="container flex justify-between items-center">
+        <div class="logo-brand flex items-center">
+          <div class="">
+            <div class="logo p-2 bg-primary-white rounded-lg">
+              <img src="assets/logo.png" alt=""></a>
+            </div>
+            <div class="logo-shape"></div>
+          </div>
+          <img src="assets/logo-text.png" alt="" class="ml-6"></a>
+        </div>
+        <ul class="nav-links flex justify-between w-5/12 text-primary-white">
+          <li><a href="index.html" class="link-home">Beranda</a> </li>
+          <li><a href="layanan.html" class="link-services">Layanan</a> </li>
+          <li><a href="tentang.html" class="link-about">Tentang Kami</a> </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero min-h-screen" style="background-image: url(assets/bg-batik.svg);">
+      <div class="hero-overlay bg-opacity-70"></div>
+      <div class="text-center hero-content text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-6 text-5xl font-semibold">
+                Selamat Datang
+              </h1>
+          <p class="mb-6">
+                Jelajahi website kami tentang Augmented Reality yang digabungkan dengan fashion
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="container pt-32 grid grid-cols-1 lg:grid-cols-2 gap-y-11 lg:gap-x-11">
+
+      <div class="text-content">
+        <h1 class="text-5xl mb-6">
+          <strong>Batik</strong> dengan
+          <strong>A</strong>ugmented
+          <strong>R</strong>eality
+        </h1>
+        <p class="mb-6">
+          Desain batik yang keren serta didukung teknologi AR untuk memaksimalkan pengalaman pengguna
+        </p>
+      </div>
+
+      <div class="carousel">
+
+        <div class="containerSlider">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="containerImage">
+                    <img src="assets/Pin landscape.jpg">
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="containerImage">
+                    <img src="assets/batik ar2-01-01.jpg">
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="containerImage">
+                    <img src="assets/pin prt-01.jpg">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+              <i class="bx bxs-left-arrow bx-md" data-glide-dir="<"></i>
+              <i class="bx bxs-right-arrow bx-md" data-glide-dir=">"></i>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Why choose us? -->
+    <section class="container pt-32">
+      <h1 class="text-4xl font-medium text-center mb-12">Kenapa memilih kami?</h1>
+      <div class="services flex justify-center lg:justify-between flex-wrap">
+        <div class="services-ar flex flex-col items-center mx-5 mb-8">
+          <img src="assets/icon/AR.svg" alt="" class="mb-6">
+          <h2 class="text-2xl font-medium mb-4">Augmented Reality</h2>
+          <p class="wrap-services text-center">
+            Menggunakan Teknologi AR
+            untuk memaksimalkan
+            pengalaman pengguna
+          </p>
+        </div>
+        <div class="services-motif flex flex-col items-center mx-5 mb-8">
+          <img src="assets/icon/Motif.svg" alt="" class="mb-6">
+          <h2 class="text-2xl font-medium mb-4">Motif yang keren</h2>
+          <p class="wrap-services text-center">
+            Desain motif yang keren
+            yang akan membuat anda
+            lebih percaya diri
+          </p>
+        </div>
+        <div class="services-kustom flex flex-col items-center mx-5 mb-8">
+          <img src="assets/icon/Kustom.svg" alt="" class="mb-6">
+          <h2 class="text-2xl font-medium mb-4">Kustomisasi</h2>
+          <p class="wrap-services text-center">
+            Menyediakan layanan untuk menyesuaikan desain batik dan 3d model anda
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk -->
+    <section class="container pt-24 grid grid-cols-1 lg:grid-cols-3 gap-y-11 lg:gap-x-11">
+      <div class="image-product col-span-1 lg:col-span-2 flex flex-col items-center sm:items-start sm:flex-row sm:justify-around lg:justify-start">
+        <div class="wrap-product relative mb-10 sm:mb-0">
+          <div class="card-product bg-primary-dark absolute">
+            <img src="assets/Batik.jpg" alt="">
+          </div>
+          <img src="assets/layer-batik.svg" alt="" class="layer-batik">
+        </div>
+        <div class="wrap-product relative move-down">
+          <div class="card-product bg-primary-dark absolute">
+            <img src="assets/Mockup with bg.jpg" alt="">
+          </div>
+          <img src="assets/layer-batik.svg" alt="" class="layer-batik">
+        </div>
+      </div>
+      <div class="text-content row-start-1 lg:col-start-3">
+        <h1 class="text-4xl font-medium mb-5">Produk kami</h1>
+        <p class="mb-6 ml-1">
+          Batik dan pin sebagai <br>marker Augmented Reality
+        </p>
+        <button class="batik-btn bg-primary-blue text-primary-white"><a href="https://www.instagram.com/batiktech.st/">Order Sekarang</a></button>
+      </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="pt-44 container">
+      <h1 class="text-4xl font-medium text-center mb-12">Saksikan video ini!</h1>
+      <div class="wrap-video mx-auto">
+        <div class="click-video cursor-pointer"></div>
+        <div class="demo-video">
+          <img src="assets/icon/logo-youtube.svg" alt="" class="logo-youtube">
+          <div class="layer-video"></div>
+          <img src="assets/img/coffe.jpg" alt="" class="thumbnail-video">
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA ke-2 -->
+    <section class="bg-secondary-blue py-12 mt-40">
+      <div class="container flex flex-col items-center">
+        <h1 class="text-4xl font-medium text-center text-primary-white mb-6">Jadi, tunggu apa lagi?</h1>
+        <p class="font-medium text-center text-primary-white mb-16" style="max-width: 453px;">Ordersekarang untuk menggunakan baju batik yang keren dengan dukungan teknologi AR!</p>
+        <button class="batik-btn bg-primary-white text-secondary-blue"><a href="https://www.instagram.com/batiktech.st/">Order sekarang</a></button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-10 bg-secondary-dark">
+      <div class="container footer text-primary-white text-base">
+        <div>
+          <div class="logo p-2 bg-primary-white rounded-lg mb-4">
+            <img src="assets/logo.png" alt="">
+          </div>
+          <p>Batik Tech Style</p>
+          <p>Copyright &copy; 2021 - All right reserved</p>
+        </div>
+        <div>
+          <span class="uppercase font-medium mb-3.5">Social Media</span>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/batiktech.st/">
+              <i class="bx bxl-instagram-alt bx-md" style="margin-left: 7px;"></i>
+            </a>
+            <a href="https://m.facebook.com/profile.php?id=100073485008871">
+              <i class="bx bxl-facebook bx-md"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+     <!-- Pop up Youtube Video -->
+    <div class="popup-blur fixed inset-0 w-screen h-screen backdrop-filter backdrop-blur-sm grid place-items-center">
+      <div class="container-yt relative w-full max-w-3xl flex items-center">
+        <iframe id="video-yt" class="absolute top-2/4 left-0 w-full h-full"
+          width="560" height="315" src="https://www.youtube.com/embed/9nA26vHiAZM?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <i class="bx bxs-x-circle bx-lg text-secondary-blue cursor-pointer
+          absolute left-2/4 -bottom-20 md:bottom-4">
+        </i>
+      </div>
+    </div>
+
+
+
+    <script src="app.js" charset="utf-8"></script>
+    <script src="dist/glide.min.js"></script>
+    <script type="module">
+
+        const glide = new Glide('.glide', {
+          type: 'carousel',
+          autoplay: 5000,
+          hoverpause: false,
+          perView: 1
+        })
+        glide.mount()
+
+
+    </script>
+
+
+  </body>
+</html>
